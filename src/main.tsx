@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Toaster } from "sonner";
 import { App } from "./app";
-import "./index.css";
+import { Providers } from "./providers";
+import "./styles/globals.css";
+import "./styles/reset.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
-    <Toaster richColors />
+    <Providers>
+      <App />
+    </Providers>
   </React.StrictMode>,
 );
