@@ -2,6 +2,8 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { formatDistanceToNow } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import { X } from "lucide-react";
+import { ChangedNoteCard } from "./changed-note-card";
+import { DeleteNoteCard } from "./delete-note-card";
 
 interface NoteCardProps {
   note: {
@@ -9,10 +11,11 @@ interface NoteCardProps {
     date: Date;
     content: string;
   };
+  onNoteChanged: (id: string, content: string) => void;
   onNoteDeleted: (id: string) => void;
 }
 
-export function NoteCard({ note, onNoteDeleted }: NoteCardProps) {
+export function NoteCard({ note, onNoteChanged, onNoteDeleted }: NoteCardProps) {
   return (
     <Dialog.Root>
       <Dialog.Trigger className="rounded-md text-left bg-slate-800 flex flex-col p-5 gap-3 overflow-hidden relative hover:ring-2 hover:ring-slate-600 focus-visible:ring-2 focus-visible:ring-lime-400 outline-none">
@@ -37,6 +40,7 @@ export function NoteCard({ note, onNoteDeleted }: NoteCardProps) {
 
           <div className="flex flex-1 flex-col gap-3 p-5">
             <span className="text-sm font-medium text-slate-300">
+              Ultima atualização{" "}
               {formatDistanceToNow(note.date, {
                 locale: ptBR,
                 addSuffix: true,
@@ -46,13 +50,11 @@ export function NoteCard({ note, onNoteDeleted }: NoteCardProps) {
             <p className="text-sm leading-6 text-slate-400">{note.content}</p>
           </div>
 
-          <button
-            type="button"
-            onClick={() => onNoteDeleted(note.id)}
-            className="w-full bg-slate-800 py-3 text-center text-sm text-slate-300 outline-none font-medium group"
-          >
-            Deseja <span className="text-red-400 group-hover:underline">apagar essa nota</span>?
-          </button>
+          <div className="grid grid-cols-2 divide-x-2 divide-slate-700">
+            <ChangedNoteCard note={note} onNoteChanged={onNoteChanged} />
+
+            <DeleteNoteCard id={note.id} onNoteDeleted={onNoteDeleted} />
+          </div>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>

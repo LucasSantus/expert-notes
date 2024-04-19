@@ -1,7 +1,7 @@
 {
-  "name": "expert-notes",
+  "name": "experts-note",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,7 +14,8 @@
     "lucide-react": "^0.323.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sonner": "^1.4.0"
+    "sonner": "^1.4.0",
+    "usehooks-ts": "^3.1.0"
   },
   "devDependencies": {
     "@types/dom-speech-recognition": "^0.0.4",
