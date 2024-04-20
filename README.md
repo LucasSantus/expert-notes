@@ -2,7 +2,7 @@
 
 <h3 id="about">:information_source: About</h3>
 
-> This project was developed using Vite, React, TypeScript, TailwindCSS.
+> This project was developed following the NLW Unite React, using Vite, React, TypeScript and TailwindCSS technologies.
 
 The idea is:
 
@@ -31,7 +31,7 @@ Used tools:
 - [TailwindCSS v3.4.3](https://tailwindcss.com/docs/installation)
 - [Radix UI](https://www.radix-ui.com/)
 - [Date FNS v3.6.0](https://date-fns.org/)
-- [sonner v1.4.41]([https://react-hook-form.com/](https://sonner.emilkowal.ski/))
+- [Sonner v1.4.41](https://sonner.emilkowal.ski)
 
 ---
 
@@ -42,6 +42,14 @@ Used tools:
 - [x] Details Note;
 - [X] Delete Note;
 - [X] Search Note;
+
+---
+
+<h3 id="status">:heavy_exclamation_mark: Status do Projeto</h3>
+
+<h4 align="center"> 
+	:heavy_check_mark: Sistema web finalizado... :heavy_check_mark:
+</h4>
 
 ---
 
