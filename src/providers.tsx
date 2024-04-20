@@ -7,7 +7,7 @@ export function Providers({ children }: ProvidersProps): JSX.Element {
   return (
     <Fragment>
       {children}
-      <Toaster richColors />
+      <Toaster duration={4000} richColors closeButton visibleToasts={9} />
     </Fragment>
   );
 }

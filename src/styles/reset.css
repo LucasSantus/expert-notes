@@ -1,7 +1,6 @@
 /* CSS Reset */
 
 /* box sizing border-box by default on all elements */
-*,
 *::before,
 *::after {
   box-sizing: border-box;
