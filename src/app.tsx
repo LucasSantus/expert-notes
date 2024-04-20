@@ -53,7 +53,7 @@ export function App(): JSX.Element {
     setNotes(notesArray);
     setNotesOnStorage(notesArray);
 
-    toast.success("Nota apagada com sucesso!");
+    toast.success("Nota deletada com sucesso!");
   }
 
   function handleSearch(event: ChangeEvent<HTMLInputElement>) {

@@ -26,21 +26,21 @@ export function DeleteNoteCard({ id, onNoteDeleted }: DeleteNoteCardProps) {
           </Dialog.Close>
 
           <div className="p-3 w-full flex flex-col gap-2">
-            <Dialog.Title className="text-base">Deletar Nota</Dialog.Title>
+            <Dialog.Title className="text-base">Deletar nota</Dialog.Title>
             <Dialog.Description className="text-slate-400 text-sm">
               Você está prestes a excluir uma nota. Tem certeza de que deseja prosseguir? Esta é uma ação irreversível e
               a informação será permanentemente removida do sistema.
             </Dialog.Description>
-            <div className="flex w-full justify-end">
-              <Dialog.Close asChild>
-                <button
-                  onClick={() => onNoteDeleted(id)}
-                  className="inline-flex px-3 py-1.5 bg-red-700 rounded-md hover:opacity-80"
-                >
-                  Confirmar
-                </button>
-              </Dialog.Close>
-            </div>
+          </div>
+          <div className="flex w-full justify-end">
+            <Dialog.Close asChild>
+              <button
+                onClick={() => onNoteDeleted(id)}
+                className="inline-flex px-4 text-sm py-2 bg-red-700 rounded-ss-md hover:opacity-80"
+              >
+                Confirmar
+              </button>
+            </Dialog.Close>
           </div>
         </Dialog.Content>
       </Dialog.Portal>
