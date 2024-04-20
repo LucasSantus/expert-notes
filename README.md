@@ -1,4 +1,4 @@
-<h1 align="center">Experts Notes</h1>
+<h1 align="center">Experts Note</h1>
 
 <h3 id="about">:information_source: About</h3>
 
