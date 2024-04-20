@@ -1,30 +1,78 @@
-# React + TypeScript + Vite
+<h1 align="center">Experts Notes</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h3 id="about">:information_source: About</h3>
 
-Currently, two official plugins are available:
+> This project was developed using Vite, React, TypeScript, TailwindCSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The idea is:
 
-## Expanding the ESLint configuration
+_"Create a simple project related to annotations with voice recording using vite, react, typescript and tailwindcss."_
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+<h3 id="why">:question: Why</h3>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+This project is part of my personal portfolio, I will be happy if you provide some feedback, code, structure, functionality or any feature&improvement you can report to improve it.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+You can use this project however you want, whether it's for studying, making improvements, you call the shots!
+
+This is a totally free project!
+
+---
+
+<h3 id="tecnologies">:rocket: Tecnologies</h3>
+
+Used tools:
+
+- [Vite v5.2.9](https://vitejs.dev/)
+- [Lucide React v0.372.0](https://lucide.dev/)
+- [React v18.2.0](https://pt-br.reactjs.org/)
+- [TypeScript v5.4.5](https://www.typescriptlang.org/)
+- [TailwindCSS v3.4.3](https://tailwindcss.com/docs/installation)
+- [Radix UI](https://www.radix-ui.com/)
+- [Date FNS v3.6.0](https://date-fns.org/)
+- [sonner v1.4.41]([https://react-hook-form.com/](https://sonner.emilkowal.ski/))
+
+---
+
+<h3 id="funcionalidades">:sparkles: Features</h3>
+
+- [X] Create Note;
+- [x] Edit Note;
+- [x] Details Note;
+- [X] Delete Note;
+- [X] Search Note;
+
+---
+
+<h3 id="running">:computer: Run project</h3>
+
+If you are interested in examining the source code and experiencing how the project works, click <a href="/RUNNING.md">here</a> for a detailed preview and the opportunity to run it.
+
+---
+
+<h3 id="author">:bust_in_silhouette: Author</h3>
+
+<table>
+	<tr>
+		<td>
+			<div> 
+				<a href="https://github.com/LucasSantus">
+					<img style="border-radius: 50%;" src="https://github.com/LucasSantus.png" width="100px;" alt=""/>
+					<br />
+					Lucas Santus
+				</a>
+			</div>
+		</td>
+	</tr>
+</table>
+<br />
+
+Made with ❤️ by Lucas Santus!<br />
+Thanks for visiting and good coding!<br />
+
+---
+
+<h3 id="license">:memo: License</h3>
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/LucasSantus/experts-note/blob/master/LICENSE) for better details.
